@@ -26,7 +26,6 @@ public class MessageNewCallBackService implements CallBackService {
             }
             case message_new: {
                 MessageNewCallBack messageNewCallback = new MessageNewCallBack(callBackDto);
-                callBackDto.getType();
                 handleMessageNew(messageNewCallback);
                 return "ok";
             }

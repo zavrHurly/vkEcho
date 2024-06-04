@@ -53,6 +53,6 @@ public class MessageSendDto implements Serializable {
     }
 
     public void setRandomId() {
-        this.randomId = (long) (Math.random() * Math.random());
+        this.randomId = (long) (Math.random() * 1000000);
     }
 }
